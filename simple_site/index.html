@@ -9,12 +9,32 @@
 </head>
 
 <body>
-    <div class="center">
-        <button class="btn">
-            Начать
-        </button>
+    <div class="popup__bg">
+        <form class="popup">
+            <img src="images/close.svg" class="close-popup">
+            <label>
+                <input type="text" name="name">
+                <div class="label__text">
+                    Ваше имя
+                </div>
+            </label>
+            <label>
+                <input type="tel" name="tel">
+                <div class="label__text">
+                    Ваш телефон
+                </div>
+            </label>
+            <label>
+                <textarea name="message"></textarea>
+                <div class="label__text">
+                    Ваше сообщение
+                </div>
+            </label>
+            <button type="submit">Отправить</button>
+        </form>
     </div>
-
+    <button id="openPopUp" class="open-popup">Открыть попап</button>
+    <script src="./main.js"></script>
 </body>
 
 </html>
