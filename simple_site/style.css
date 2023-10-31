@@ -19,11 +19,13 @@
 
 .popup {
     position: absolute;
+    display:flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background: #fff;
-    width: 400px;
+    /* min: 400px; */
+    max-width: 500px;
     padding: 25px;
     transition: 0.5s all;
 }
@@ -35,7 +37,7 @@
 /* Конец важной части */
 /* Далее код для стилизации формы */
 .close-popup {
-    position: absolute;
+    /* position: absolute; */
     top: 10px;
     right: 10px;
     cursor: pointer;
